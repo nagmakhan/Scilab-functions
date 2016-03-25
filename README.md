@@ -39,12 +39,14 @@ Functions and their exhaustive description are given below:
     a:vector of coefficients corresponding to the denominator of the transfer function where the filter H(z)=B(z)/A(z)
     
     bp:vector of coefficients corresponding to the numerator of the power complementary filter G(z) where G(z)=Bp(z)/A(z) and we have:
-     $|H(z)|^2$+|G(z)|^2=1
+     |H(z)|^2+|G(z)|^2=1
     
     DESCRIPTION:
     
     [b,a,bp]=ca2tf(d1,d2) where d1 and d2 are real vectors, returns b, a and bp where
+
     H(z)=B(z)/A(z)=(1/2)*[H1(z)+H2(z)]
+    
     G(z)=Bp(z)/A(z)=(1/2)*[H2(z)-H1(z)]
     
     [b,a,bp]=ca2tf(d1,d2,Beta) where d1, d2 and Beta are complex, returns b,a and bp where
